@@ -1,9 +1,13 @@
 :root {
     --background-blue: #0a192f;
     --dark-blue: #020c1b;
+    --navbar-blue: #112240;
     --green: #66ffdb;
     --blueish-transparent-green: rgba(100,255,218,0.1);
-
+    --text-grey: #ccd6f6;
+    --slate: #8892b0;
+    --open-sans: 'Open Sans', sans-serif;
+    --noto-sans:  'Noto Sans JP', sans-serif;
 }
 
 * {
@@ -16,8 +20,9 @@ html {
     font-size: 62.5%;
 }
 
+/* intro */
 body { 
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: var(--noto-sans);
     background-color: var(--dark-blue);
     display: flex;
     align-items: center;
@@ -134,25 +139,31 @@ body {
     }
 }
 
+/* mainpage */
+
 .container {
     display: grid;
     width: 100vw;
     height: 100%;
     opacity: 0;
     transition: opacity 2s ease-in;
+    grid-template-rows: 100px;
 }
 
 nav {
-    grid-area: navl navr;
     color: var(--green);
     font-size: 2rem;
     display: grid;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(10, 25, 47, 0.95);
+    backdrop-filter: blur(4px);
 }
 
 main {
     color: var(--green);
     opacity: 0;
-    /* transition: opacity 1s ease-in; */
+    padding: 2rem;
 }
 
 .logo {
@@ -182,4 +193,67 @@ main {
     background-color: transparent;
     border: none;
     color: var(--green);
+    z-index: 10;
 }
+
+.menu-list {
+    position: absolute;
+    left: 120%;
+    list-style: none;
+    transition: left 1s ease;
+    top: 0;
+    width: 80vw;
+    background-color: var(--navbar-blue);
+    height: 100vh;
+    padding-top: 100px;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.menu-list.show {
+    left: 42vw;
+}
+
+.menu-item {
+    padding-bottom: 2.2rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--text-grey);
+    text-align: center;
+}
+
+.menu-item:last-child{
+    margin-top: 4rem;
+}
+
+.btn {
+    font-family: var(--open-sans);
+    text-decoration: none;
+    border: 1px solid var(--green);
+    padding: 1rem 3.6rem;
+    border-radius: 2px;
+    color: var(--green);
+}
+
+.number {
+    color: var(--green);
+    margin-left: 1.8rem;
+}
+
+h1{
+    color: aliceblue;
+    font-family: var(--open-sans);
+    font-size: 3rem;
+}
+
+h2{
+    color: var(--slate);
+    font-family: var(--open-sans);
+    font-size: 2rem;
+}
+
+
