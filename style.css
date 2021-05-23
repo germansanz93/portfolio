@@ -16,6 +16,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body{
@@ -23,10 +24,12 @@ body{
     grid-auto-rows: minmax(90px, auto);
     font-family: var(--noto-sans);
     background-color: var(--Black-haze);
+    overflow-x: hidden;
 }
 
 header {
     position: fixed;
+    z-index: 10;
 }
 
 nav {
@@ -60,6 +63,7 @@ nav {
     background-color: transparent;
     border: none;
     color: var(--baltic-sea);
+    z-index: 10;
 }
 
 .menu-icon{
@@ -76,7 +80,6 @@ nav {
     transition: left 1s ease;
     font-size: 2rem;
     padding-top: 120px;
-    z-index: -1;
 }
 
 .menu-list.show{
@@ -88,6 +91,9 @@ nav {
     width: 60vw;
     text-align: center;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-item a{
@@ -95,8 +101,17 @@ nav {
     color: var(--baltic-sea);
 }
 
-main{
+main {
+    padding-top: 90px;
+    width: 100vw;
+}
+
+.titles{
     grid-row: 2;
+}
+
+#about{
+    grid-row: 3;
 }
 
 h1{
@@ -121,6 +136,9 @@ article{
     display: flex;
     align-items: center;
     margin-top: 1rem;
+    border-radius: 2rem;
+    height: 4rem;
+    padding-left: 1rem;
 }
 
 .article-title h3 {
@@ -150,7 +168,55 @@ article p {
     color: var(--baltic-sea);
 }
 
+.projects {
+    padding-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.carousel {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 4rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    width: 95vw;
+}
+
 .card{
-    border-radius: 0.8rem;
-    padding: 3rem;
+    min-width: 90vw;
+    max-width: 320px;
+    border-radius: 1rem;
+    background-color: var(--Black-haze);
+    color: var(--baltic-sea);
+    padding: 2rem;
+    margin: 4rem 1.8rem;
+    scroll-snap-align: center;
+}
+
+.carousel-prev, .carousel-next{
+    position: absolute;
+    top: 50%;
+    background-color: var(--gumbo);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+    border: none;
+    color: var(--Black-haze);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-prev{
+    left: 0;
+    z-index: 1;
+}
+
+.carousel-next{
+    right: 0;
 }
