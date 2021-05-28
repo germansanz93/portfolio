@@ -123,12 +123,12 @@ h1{
 
 h2{
     font-size: 1.8rem;
-    margin: 0 2rem 3.2rem 2rem;
+    margin: 0 2rem 1rem 2rem;
     color: var(--gumbo);
 }
 
 article{
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     font-weight: 300;
 }
 
@@ -169,7 +169,6 @@ article p {
 }
 
 .projects {
-    padding-top: 2rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -219,4 +218,48 @@ article p {
 
 .carousel-next{
     right: 0;
+}
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills h3 {
+    font-size: 2rem;
+    color: var(--baltic-sea);
+    padding: 1rem;
+}
+
+.skills span {
+    color: var(--gumbo);
+    padding-left: 1rem;
+}
+
+.before {
+    width: 25vw;
+    border-bottom: 2px solid var(--gumbo);
+}
+.after {
+    width: 25vw;
+    border-bottom: 2px solid var(--gumbo);
+}
+
+.skill-icons {
+    padding: 2rem 0;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
 }
