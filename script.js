@@ -13,13 +13,11 @@ const nextBtn = document.querySelector('.carousel-next');
 
 
 prevBtn.addEventListener('click', () => {
-    carousel.scrollLeft > visualViewport.width/40 ? 
-        carousel.scrollBy({top: 0, left: -visualViewport.width, behavior: 'smooth'}) :
-        carousel.scrollLeft = visualViewport.width/40;
+    if(carousel.scrollLeft > window.innerWidth) 
+        carousel.scrollBy({top: 0, left: -window.innerWidth, behavior: 'smooth'});
 })
 
 nextBtn.addEventListener('click', () => {
-    carousel.scrollLeft < 2 * visualViewport.width*(39/40) ? 
-        carousel.scrollBy({top: 0, left: visualViewport.width, behavior: 'smooth'}) :
-        carousel.scrollLeft = 2 * visualViewport.width*(39/40);
+    if(carousel.scrollLeft < 2 * window.innerWidth)
+        carousel.scrollBy({top: 0, left: window.innerWidth, behavior: 'smooth'});
 })

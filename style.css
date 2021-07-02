@@ -195,6 +195,27 @@ article p {
     padding: 2rem;
     margin: 4rem 1.8rem;
     scroll-snap-align: center;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card img {
+    border-radius: 1rem;
 }
 
 .carousel-prev, .carousel-next{
@@ -262,4 +283,16 @@ article p {
     grid-gap: 3rem;
     grid-template-columns: repeat(2, auto);
     justify-content: center;
+}
+
+footer {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+footer a {
+    display: inline;
+    width: 10vw;
 }
