@@ -25,25 +25,25 @@
                 <li class="menu-item"><span class="material-icons-round">
                         info
                     </span>
-                    <a class="menu-link" href="">About</a>
+                    <a class="menu-link" href="#about">About</a>
                 </li>
                 <li class="menu-item">
                     <span class="material-icons-round">
                         badge
                     </span>
-                    <a class="menu-link" href="">Projects</a>
+                    <a class="menu-link" href="#projects">Projects</a>
                 </li>
                 <li class="menu-item">
                     <span class="material-icons-round">
                         contact_page
                     </span>
-                    <a class="menu-link" href="">Contact</a>
+                    <a class="menu-link" href="#contact">Contact</a>
                 </li>
                 <li class="menu-item">
                     <span class="material-icons-round">
                         assignment
                     </span>
-                    <a href="" class="btn">Resume</a>
+                    <a href="cv.html" class="btn">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -59,13 +59,13 @@
                     <span class="material-icons-round">
                         info
                     </span>
-                    <h3>About Me</h3>
+                    <h3 id='about'>About Me</h3>
                 </div>
                 <p>Computer science degree student. Passionate about software development and learning new technologies.</p>
                 <p>After learning some python and java, I decided to learn Javascript and its frameworks for both frontend and backend development.</p>
                 <p>I am currently carrying out several projects with the most used frameworks in the industry with this language.</p>
             </section>
-            <section class="skills">
+            <section class="skills" id="skills">
                 <div class="skills-title">
                     <div class="before"></div>
                     <div class="section-title light">
@@ -92,12 +92,12 @@
                 </div>
             </section>
         </article>
-        <article class="dark projects">
+        <article class="dark projects" id="projects">
             <div class="article-title light">
                 <span class="material-icons-round">
                     assignment
                 </span>
-                <h3 class="light">Projects</h3>
+                <h3 class="light" id="projects">Projects</h3>
             </div>
             <button class="carousel-prev">
                 <span class="material-icons-round">
@@ -115,7 +115,13 @@
                     <img class="card-img" src="./images/lights-out.png" alt="">
                     <h2>Lights Out</h2>
                     <p>Simple game developed entirely in Reactjs and deployed in Heroku.
-                        The development of the game requires understanding systems of linear equations and solution spaces</p>
+                        The development of the game requires understanding systems of linear equations and solution spaces.</p>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="./images/Todo.png" alt="">
+                    <h2>Todo App</h2>
+                    <p>Simple ToDo list developed in Reactjs. This is a frontend only project, there is no persistence.
+                    You can create, edit and delete the Todos. You can mark them as done by clicking on them</p>
                 </div>
             </div>
             <button class="carousel-next">
@@ -124,12 +130,12 @@
                 </span>
             </button>
         </article>
-        <article class="light" id="about">
+        <article class="light" id="contact">
             <div class="article-title dark">
                 <span class="material-icons-round">
                     info
                 </span>
-                <h3>Contact</h3>
+                <h3 id='contact'>Contact</h3>
             </div>
             <p>I am currently looking for job opportunities, either for a particular project or for a development company.</p>
             <p>Whether you want to contact me with a question or query or for a proposal, please do not hesitate to do it. I always take the time to answer.</p>

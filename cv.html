@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cv.css">
+  <title>CV German Sanz</title>
+</head>
+
+<body>
+  <button id="save" class="noprint">Imprimir</button>
+  <a id="back" href="index.html" class="noprint">Portfolio</a>
+  <div class="container">
+    <div class='picture'>
+      <img  src="./gs_pic.jpg" alt="I am a beauty">
+      <hr>
+    </div>
+    <section class="contact">
+      <h2>Contacto</h2>
+      <h3>Celular:</h3>
+      <p>+5492966488363</p>
+      <h3>Email:</h3>
+      <p>germansanz93@gmail.com</p>
+      <h3>Linkedin</h3>
+      <p><a href='https://www.linkedin.com/in/german-sanz-4739b418b/'>https://www.linkedin.com/in/german-
+          sanz-4739b418b/</a></p>
+      <h3>Github</h3>
+      <p><a href='https://github.com/germansanz93'>https://github.com/germansanz93</a></p>
+    </section>
+    <section class="profile">
+      <h1>German Sanz</h1>
+      <h2>Perfil</h2>
+        <p>Soy estudiante de la carrera licenciatura en informatica de la Universidad Siglo XXI. Acabo de terminar el bootcamp de Colt
+          Steele de programación fullstack con Javascript. Tengo ademas
+          varios cursos realizados en Platzi, los cuales se pueden consultar
+          en mi perfil de linkedin.</p>
+      <hr>    
+    </section>
+    <section class="experience">
+      <h2>Experiencia Laboral</h2>
+      <h3>Administrativo de deposito</h3>
+      <p><strong>Epiroc Argentina | Enero 2020 - Enero 2021</strong></p>
+      <hr>
+    </section>
+    <section class="training">
+      <h2>Formacion</h2>
+      <h3>Universidad Empresarial Siglo XXI</h3>
+      <p><strong>Licenciatura en informática - Marzo 2019 - presente.</strong></p>
+      <hr>
+    </section>
+    <section class="skills">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML y CSS</li>
+        <li>Javascript</li>
+        <li>NodeJS y npm</li>
+        <li>Express</li>
+        <li>ReactJS</li>
+        <li>MongoDB</li>
+        <li>Mongo Atlas</li>
+        <li>Mongoose</li>
+        <li>PostgreSQL</li>
+        <li>Bootstrap</li>
+        <li>Passport</li>
+        <li>Heroku</li>
+        <li>GIT y GITHUB</li>
+      </ul>
+    </section>
+    <section class="languages">
+      <h2>Idiomas</h2>
+      <p><strong>
+          <h3>Ingles:</h3> Intermedio
+        </strong></p>
+    </section>
+  </div>
+  <script>
+    let btn = document.querySelector('#save');
+    btn.addEventListener('click',() => {
+      window.print();
+    })
+  </script>
+</body>
+
+</html>

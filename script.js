@@ -1,6 +1,13 @@
 //menu
 const menuList = document.querySelector('.menu-list');
 const menuBtn = document.querySelector('.menu-btn');
+const menuLinks = document.querySelectorAll('.menu-link');
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuList.classList.toggle('show');
+    })
+})
 
 menuBtn.addEventListener('click', () => {
     menuList.classList.toggle('show');
@@ -13,11 +20,9 @@ const nextBtn = document.querySelector('.carousel-next');
 
 
 prevBtn.addEventListener('click', () => {
-    if(carousel.scrollLeft > window.innerWidth) 
-        carousel.scrollBy({top: 0, left: -window.innerWidth, behavior: 'smooth'});
+    carousel.scrollBy({top: 0, left: -carousel.offsetWidth, behavior: 'smooth'});
 })
 
 nextBtn.addEventListener('click', () => {
-    if(carousel.scrollLeft < 2 * window.innerWidth)
-        carousel.scrollBy({top: 0, left: window.innerWidth, behavior: 'smooth'});
+        carousel.scrollBy({top: 0, left: carousel.offsetWidth, behavior: 'smooth'});
 })

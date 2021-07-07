@@ -183,7 +183,7 @@ article p {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    width: 95vw;
+    width: 94vw;
 }
 
 .card{
@@ -199,10 +199,12 @@ article p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card-img {
     width: 100%;
+    max-width: 350px;
 }
 
 .card h2 {
@@ -285,6 +287,10 @@ article p {
     justify-content: center;
 }
 
+.skill-icons img {
+    padding: 5vw;
+}
+
 footer {
     display: flex;
     width: 100vw;
@@ -295,4 +301,13 @@ footer {
 footer a {
     display: inline;
     width: 10vw;
+}
+
+@media (min-width: 540px) {
+    .skill-icons {
+        grid-template-columns: repeat(3, auto);
+    }
+    .skill-icons img {
+        padding: 2vw;
+    }
 }
