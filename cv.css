@@ -40,7 +40,6 @@ body {
   background-color: #2a2a2e;
   min-width: 320px;
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -184,8 +183,14 @@ li::before{
 }
 
 @media print{
-  @page{
-    size: A4;
+
+  html,body{
+    height:297mm;
+    width:210mm;
+  }
+
+  .container{
+    width: 1200px;
   }
 
   .noprint{
