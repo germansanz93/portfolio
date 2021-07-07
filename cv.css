@@ -38,7 +38,11 @@ html{
 body {
   font-family: 'NotoSansJP';
   background-color: #2a2a2e;
-  min-width: 400px;
+  min-width: 320px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 h1{
@@ -109,7 +113,7 @@ li::before{
   color: var(--light-grey);
   padding: 0 2rem;
   background-color: #FFF;
-  min-width: 400px;
+  min-width: 320px;
 }
 
 .picture{
@@ -180,11 +184,12 @@ li::before{
 }
 
 @media print{
+  @page{
+    size: A4;
+  }
+
   .noprint{
     visibility: hidden;
-  }
-  .container{
-    width: 200mm;
   }
 }
 
@@ -199,7 +204,7 @@ li::before{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2fr 1fr 1fr 3fr;
     width: 100%;
-    max-width: 200mm;
+    max-width: 210mm;
     padding: auto;
     position: absolute;
   }
@@ -207,7 +212,6 @@ li::before{
   .picture{
     grid-area: pic;
     display: inline;
-
   }
 
   hr{
