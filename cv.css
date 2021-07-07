@@ -189,16 +189,9 @@ li::before{
     width:210mm;
   }
 
-  .container{
-    width: 1200px;
-  }
-
   .noprint{
     visibility: hidden;
   }
-}
-
-@media (min-width: 640px){
 
   .container{
     display: grid;
@@ -239,6 +232,48 @@ li::before{
     top: 8rem;
     padding: 0.8rem;
     z-index: 10;
+  }
+}
+
+@media (min-width: 640px){
+
+  .container{
+    display: grid;
+    grid-template-areas: 'pic profile profile'
+                          'contact experience experience'
+                          'contact training training'
+                          'contact skills languages';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 3fr;
+    width: 100%;
+    max-width: 210mm;
+    padding: auto;
+    position: absolute;
+  }
+
+  .picture{
+    grid-area: pic;
+    display: inline;
+  }
+
+  hr{
+    width: 90%;
+  }
+
+  .contact {
+    margin: 5px 30px;
+  }
+
+  #save{
+    right: 1rem;
+    top: 4.5rem;
+    padding: 1rem;
+  }
+
+  #back{
+    right: 9rem;
+    top: 4.5rem;
+    padding: 0.8rem;
   }
 
 }
