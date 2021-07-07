@@ -43,7 +43,7 @@
                     <span class="material-icons-round">
                         assignment
                     </span>
-                    <a href="cv.html" class="btn">Resume</a>
+                    <a href="cv.html" class="btn" target="blank">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -61,9 +61,12 @@
                     </span>
                     <h3 id='about'>About Me</h3>
                 </div>
-                <p>Computer science degree student. Passionate about software development and learning new technologies.</p>
-                <p>After learning some python and java, I decided to learn Javascript and its frameworks for both frontend and backend development.</p>
-                <p>I am currently carrying out several projects with the most used frameworks in the industry with this language.</p>
+                <p>Computer science degree student. Passionate about software development and learning new technologies.
+                </p>
+                <p>After learning some python and java, I decided to learn Javascript and its frameworks for both
+                    frontend and backend development.</p>
+                <p>I am currently carrying out several projects with the most used frameworks in the industry with this
+                    language.</p>
             </section>
             <section class="skills" id="skills">
                 <div class="skills-title">
@@ -87,8 +90,8 @@
                     <img src="./icons/git.png" alt="">
                     <img src="./icons/npm.png" alt="">
                     <img src="./icons/bootstrap.png" alt="">
-                    <img src="./icons/vsc.png" alt="">
-                    <img src="./icons/react.png" alt="">
+                    <img class="vsc-icon" src="./icons/vsc.png" alt="">
+                    <img class="react-icon" src="./icons/react.png" alt="">
                 </div>
             </section>
         </article>
@@ -105,24 +108,40 @@
                 </span>
             </button>
             <div class="carousel">
-                <div class="card">
+                <a href="https://fast-hamlet-52291.herokuapp.com" target="blank" class="card">
+                <div>
                     <img class="card-img" src="./images/yelp-camp.png" alt="">
-                    <h2>Yelp Camp</h2>
-                    <p>Web application carried out with Javascript: Node, MongoDB, Express, Passport, Ejs, Bootstrap, Helmet, Joi. Using the Mapbox APIs for geolocation and Cloudinary to store the images.
-                        The database is stored in Mongo Atlas and the app is deployed with Heroku.</p>
+                    <div>
+                        <h2>Yelp Camp</h2>
+                        <p>Web application carried out with Javascript: Node, MongoDB, Express, Passport, Ejs,
+                            Bootstrap, Helmet, Joi. Using the Mapbox APIs for geolocation and Cloudinary to store the
+                            images.
+                            The database is stored in Mongo Atlas and the app is deployed with Heroku.</p>
+                    </div>
                 </div>
-                <div class="card">
+            </a>
+            <a href="https://lights-out-gs.herokuapp.com/" target="blank" class="card">
+                <div>
                     <img class="card-img" src="./images/lights-out.png" alt="">
-                    <h2>Lights Out</h2>
-                    <p>Simple game developed entirely in Reactjs and deployed in Heroku.
-                        The development of the game requires understanding systems of linear equations and solution spaces.</p>
+                    <div>
+                        <h2>Lights Out</h2>
+                        <p>Simple game developed entirely in Reactjs and deployed in Heroku.
+                            The development of the game requires understanding systems of linear equations and solution
+                            spaces.</p>
+                    </div>
                 </div>
-                <div class="card">
+            </a>
+            <a href="https://afternoon-headland-47860.herokuapp.com/" target="blank" class="card">
+                <div>
                     <img class="card-img" src="./images/Todo.png" alt="">
-                    <h2>Todo App</h2>
-                    <p>Simple ToDo list developed in Reactjs. This is a frontend only project, there is no persistence.
-                    You can create, edit and delete the Todos. You can mark them as done by clicking on them</p>
+                    <div>
+                        <h2>Todo App</h2>
+                        <p>Simple ToDo list developed in Reactjs. This is a frontend only project, there is no
+                            persistence.
+                            You can create, edit and delete the Todos. You can mark them as done by clicking on them</p>
+                    </div>
                 </div>
+            </a>
             </div>
             <button class="carousel-next">
                 <span class="material-icons-round">
@@ -137,19 +156,100 @@
                 </span>
                 <h3 id='contact'>Contact</h3>
             </div>
-            <p>I am currently looking for job opportunities, either for a particular project or for a development company.</p>
-            <p>Whether you want to contact me with a question or query or for a proposal, please do not hesitate to do it. I always take the time to answer.</p>
-            <p>Keep in mind that if you contact me by mail or Linkedin it will take less time to answer than by Twitter or Github
-            </p>
-            <p>You have links to all my social networks in the footer, or you can send me an email to <a href="mailto:germansanz93@gmail.com?subject=|GorilaDev|%20Please%20Don't%20Change%20This%20Subject">germansanz93@gmail.com</a> with this subject: 
-                |GorilaDev| with the pipelines included.</p>
+            <section>
+                <p>I am currently looking for job opportunities, either for a particular project or for a development
+                    company.</p>
+                <p>Whether you want to contact me with a question or query or for a proposal, please do not hesitate to do
+                    it. I always take the time to answer.</p>
+                <p>Keep in mind that if you contact me by mail or Linkedin it will take less time to answer than by Twitter
+                    or Github
+                </p>
+                <p>You have links to all my social networks in the footer, or you can send me an email to <a
+                        href="mailto:germansanz93@gmail.com?subject=|GorilaDev|%20Please%20Don't%20Change%20This%20Subject">germansanz93@gmail.com</a>
+                    with this subject:
+                    |GorilaDev| with the pipelines included.</p>
+            </section>
         </article>
     </main>
     <footer>
-        <a href="https://www.linkedin.com/in/german-sanz-4739b418b/"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
-        <a href="https://github.com/germansanz93"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-        <a href="https://twitter.com/goriladev"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><title>Twitter</title><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
-        <a href="https://www.instagram.com/germansanz14/"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><title>Instagram</title><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/german-sanz-4739b418b/"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-linkedin">
+                <title>LinkedIn</title>
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+            </svg></a>
+        <a href="https://github.com/germansanz93"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-github">
+                <title>GitHub</title>
+                <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+            </svg></a>
+        <a href="https://twitter.com/goriladev"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-twitter">
+                <title>Twitter</title>
+                <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                </path>
+            </svg></a>
+        <a href="https://www.instagram.com/germansanz14/"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="feather feather-instagram">
+                <title>Instagram</title>
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg></a>
+        <a href="cv.html"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 392.533 392.533" role="img"
+                viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="6" stroke-linecap="round"
+                stroke-linejoin="round">
+                <g>
+                    <g>
+                        <path d="M292.396,324.849H99.879c-6.012,0-10.925,4.848-10.925,10.925c0,6.012,4.849,10.925,10.925,10.925h192.582
+                        c6.012,0,10.925-4.849,10.925-10.925C303.321,329.697,298.473,324.849,292.396,324.849z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M292.396,277.01H99.879c-6.012,0-10.925,4.848-10.925,10.925c0,6.012,4.849,10.925,10.925,10.925h192.582
+                        c6.012,0,10.925-4.849,10.925-10.925C303.321,281.859,298.473,277.01,292.396,277.01z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path
+                            d="M196.137,45.834c-25.859,0-46.998,21.075-46.998,46.998c0,25.859,21.139,46.933,46.998,46.933
+                        s46.998-21.075,46.998-46.998S221.996,45.834,196.137,45.834z M196.137,117.851c-13.77,0-25.083-11.313-25.083-25.083
+                        c0-13.77,11.248-25.083,25.083-25.083s25.083,11.313,25.083,25.083C221.22,106.537,209.907,117.851,196.137,117.851z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path d="M258.521,163.362c-39.887-15.515-84.752-15.515-124.638,0c-13.059,5.107-21.786,18.101-21.786,32.388v44.347
+                        c-0.065,6.012,4.849,10.925,10.861,10.925h146.424c6.012,0,10.925-4.848,10.925-10.925V195.75
+                        C280.307,181.463,271.58,168.469,258.521,163.362z M258.521,229.236H133.883v-33.422c0-5.301,3.168-10.214,7.887-12.024
+                        c34.844-13.511,74.02-13.511,108.865,0c4.719,1.875,7.887,6.659,7.887,12.024V229.236z" />
+                    </g>
+                </g>
+                <g>
+                    <g>
+                        <path
+                            d="M313.083,0H131.491c-8.404,0-16.291,3.232-22.238,9.18L57.018,61.414c-5.947,5.948-9.18,13.834-9.18,22.238v277.333
+                        c0,17.39,14.158,31.547,31.547,31.547h233.762c17.39,0,31.547-14.158,31.547-31.547V31.547C344.501,14.158,330.343,0,313.083,0z
+                    M112.032,37.236v27.022H85.01L112.032,37.236z M322.715,116.816h-40.598c-6.012,0-10.925,4.849-10.925,10.925
+                        c0,6.012,4.848,10.925,10.925,10.925h40.598v19.394h-14.869c-6.012,0-10.925,4.848-10.925,10.925
+                        c0,6.012,4.849,10.925,10.925,10.925h14.869v181.139c0,5.366-4.331,9.697-9.632,9.697H79.192c-5.301,0-9.632-4.331-9.632-9.632
+                        V86.044h53.398c6.012,0,10.925-4.848,10.925-10.925V21.721h179.2c5.301,0,9.632,4.331,9.632,9.632V116.816z" />
+                    </g>
+            </svg></a>
+        </div>
+        <h2>Developed by German Sanz.</h2>
     </footer>
     <script src="script.js"></script>
 </body>
