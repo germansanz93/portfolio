@@ -14,7 +14,7 @@
     <button id="save" class="noprint">Imprimir</button>
     <a id="back" href="index.html" class="noprint">Portfolio</a>
     <div class='picture'>
-      <img  src="./gs_pic.jpg" alt="I am a beauty">
+      <img src="./gs_pic.jpg" alt="I am a beauty">
       <hr>
     </div>
     <section class="contact">
@@ -24,24 +24,40 @@
       <h3>Email:</h3>
       <p>germansanz93@gmail.com</p>
       <h3>Linkedin</h3>
-      <p><a href='https://www.linkedin.com/in/german-sanz-4739b418b/'>https://www.linkedin.com/in/german-
+      <p><a target='blank' href='https://www.linkedin.com/in/german-sanz-4739b418b/'>https://www.linkedin.com/in/german-
           sanz-4739b418b/</a></p>
       <h3>Github</h3>
-      <p><a href='https://github.com/germansanz93'>https://github.com/germansanz93</a></p>
+      <p><a target='blank' href='https://github.com/germansanz93'>https://github.com/germansanz93</a></p>
+      <h3>Portfolio</h3>
+      <p><a target='blank' href='https://germansanz93.github.io/portfolio/'>https://germansanz93.github.io/portfolio/</a></p>
     </section>
     <section class="profile">
       <h1>German Sanz</h1>
       <h2>Perfil</h2>
-        <p>Soy estudiante de la carrera licenciatura en informatica de la Universidad Siglo XXI. Acabo de terminar el bootcamp de Colt
-          Steele de programación fullstack con Javascript. Tengo ademas
-          varios cursos realizados en Platzi, los cuales se pueden consultar
-          en mi perfil de linkedin.</p>
-      <hr>    
+      <p>Soy estudiante de la carrera Ingenieria en sistemas de la Universidad Tecnologica Nacional. Realice los
+        bootcamps de Colt
+        Steele de programación fullstack con Javascript y de ReactJS. Tengo ademas
+        varios cursos realizados en Platzi, los cuales se pueden consultar
+        en mi perfil de linkedin.</p>
+      <hr>
     </section>
     <section class="experience">
-      <h2>Experiencia Laboral</h2>
-      <h3>Administrativo de deposito</h3>
-      <p><strong>Epiroc Argentina | Enero 2020 - Enero 2021</strong></p>
+      <h2>Experiencia</h2>
+      <div class="experience-item">
+        <h3>Yelp Camp - Bootcamp Colt Steele</h3>
+        <p><strong>Express, MongoDB, passport, EJS, Bootstrap, geolocacion con API Mapbox...</strong></p>
+        <a href='https://fast-hamlet-52291.herokuapp.com' target='blank' >Ver Sitio</a>
+      </div>
+      <div class="experience-item">
+        <h3>Lights Out - Juego (Solo front)</h3>
+        <p><strong>Enteramente desarrollado en React.</strong></p>
+        <a href='https://lights-out-gs.herokuapp.com' target='blank' >Ver Sitio</a>
+      </div>
+      <div class="experience-item">
+        <h3>ToDo App - Todo List sin persistencia de datos (Solo front)</h3>
+        <p><strong>Enteramente desarrollado en React.</strong></p>
+        <a href='https://afternoon-headland-47860.herokuapp.com' target='blank' >Ver Sitio</a>
+      </div>
       <hr>
     </section>
     <section class="training">
@@ -77,7 +93,7 @@
   </div>
   <script>
     let btn = document.querySelector('#save');
-    btn.addEventListener('click',() => {
+    btn.addEventListener('click', () => {
       window.print();
     })
   </script>
