@@ -257,6 +257,10 @@ div .more:hover{
     z-index: 10;
   }
 
+  #save:hover{
+    cursor: pointer;
+  }
+
   #back{
     right: 1rem;
     top: 8rem;
