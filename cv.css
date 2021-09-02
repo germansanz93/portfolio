@@ -175,6 +175,10 @@ li::before{
   font-size: 1.4rem
 }
 
+#save:hover{
+  cursor: pointer;
+}
+
 #back{
   position: absolute;
   top: 3rem;
@@ -255,10 +259,6 @@ div .more:hover{
     top: 4rem;
     padding: 1rem;
     z-index: 10;
-  }
-
-  #save:hover{
-    cursor: pointer;
   }
 
   #back{
