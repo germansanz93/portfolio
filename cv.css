@@ -203,6 +203,16 @@ li::before{
   font-weight: 700;
 }
 
+div .more{
+  font-size: 1.4rem;
+  color: var(--light-green);
+  font-weight: bold;
+}
+
+div .more:hover{
+  color: var(--light-grey);
+}
+
 @media print{
 
   html,body{
