@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV German Sanz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #004d4d; /* Color petróleo oscuro (basado en tu ejemplo) */
+            --secondary-color: #008080; /* Un tono más claro para detalles */
+            --text-color: #333;
+            --bg-sidebar: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-color);
+            background: #555; /* Fondo gris para visualizar en navegador */
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Contenedor A4 */
+        .page {
+            background: var(--white);
+            width: 210mm;
+            min-height: 297mm;
+            display: grid;
+            grid-template-columns: 32% 68%; /* Columna izquierda estrecha, derecha ancha */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            overflow: hidden; /* Evita desbordes */
+        }
+
+        /* --- COLUMNA IZQUIERDA (SIDEBAR) --- */
+        .sidebar {
+            background-color: var(--bg-sidebar);
+            padding: 30px 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .profile-img-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--secondary-color);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* IMPORTANTE: Reemplaza 'tu_foto.jpg' con la ruta real de tu foto si la tienes en local, 
+               o arrastra tu foto a la misma carpeta que este archivo HTML */
+            background-color: #ddd; 
+        }
+
+        .sidebar-section {
+            margin-bottom: 25px;
+        }
+
+        .sidebar-title {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 13px;
+            word-wrap: break-word;
+        }
+
+        .contact-info strong {
+            color: var(--primary-color);
+            display: block;
+            font-size: 11px;
+        }
+
+        .skills-list, .lang-list {
+            list-style: none;
+        }
+
+        .skills-list li, .lang-list li {
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #e0f2f1;
+            color: var(--primary-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .about-text {
+            font-size: 13px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        /* --- COLUMNA DERECHA (MAIN) --- */
+        .main-content {
+            padding: 40px 30px;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 5px;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            margin-top: 25px;
+            font-weight: 700;
+        }
+
+        .job-item, .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 15px;
+            color: #222;
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: var(--secondary-color);
+            font-size: 14px;
+        }
+
+        .job-date {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .job-desc {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #444;
+            margin-top: 5px;
+        }
+
+        .job-desc ul {
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+        
+        .edu-item strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        /* PARA IMPRESIÓN */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                width: 100%;
+                height: auto;
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <!-- FOTO: Reemplaza el src con tu foto real -->
+            <div class="profile-img-container">
+                <!-- He puesto una imagen genérica. Pon tu archivo de imagen en la misma carpeta y cambia src="tu-foto.jpg" -->
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQE1C0O84Q6s8Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714417531776?e=1741219200&v=beta&t=example" alt="German Sanz" class="profile-img">
+            </div>
+
+            <!-- CONTACTO -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Contacto</h3>
+                <div class="contact-info">
+                    <p><strong>Celular</strong> +54 9 2966 488363</p>
+                    <p><strong>Email</strong> germansanz93@gmail.com</p>
+                    <p><strong>Ubicación</strong> Córdoba, Argentina</p>
+                    <p><strong>Web</strong> cvgs-22723.web.app</p>
+                    <p><strong>LinkedIn</strong> /in/germansanz93</p>
+                    <p><strong>GitHub</strong> /germansanz93</p>
+                </div>
+            </div>
+
+            <!-- ACERCA DE MI -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Acerca de mí</h3>
+                <p class="about-text">
+                    Busco mejorar día a día, trato de mantenerme aprendiendo cosas nuevas y analizar mis falencias para trabajar sobre ellas. 
+                    Me gustan los desafíos y pienso que el trabajo en equipo y la comunicación son fundamentales para lograr grandes objetivos.
+                </p>
+            </div>
+
+            <!-- SKILLS -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Habilidades</h3>
+                
+                <div style="margin-bottom: 10px;">
+                    <strong>Core & Backend</strong><br>
+                    <span class="skill-tag">Java (Spring Boot)</span>
+                    <span class="skill-tag">Golang</span>
+                    <span class="skill-tag">Microservicios</span>
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <strong>Cloud & DevOps</strong><br>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Google Cloud (GCP)</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">PubSub</span>
+                </div>
+
+                <div style="margin-bottom: 10px;">
+                    <strong>Herramientas</strong><br>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">JUnit & Mockito</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">OpenAPI</span>
+                </div>
+
+                 <div>
+                    <strong>Frontend Basics</strong><br>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">ExpressJS</span>
+                </div>
+            </div>
+
+            <!-- IDIOMAS -->
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Idiomas</h3>
+                <ul class="lang-list">
+                    <li><strong>Inglés:</strong> B2 / Profesional</li>
+                    <li><strong>Español:</strong> Nativo</li>
+                    <li><strong>Croata:</strong> Elemental</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+            <header>
+                <h1>German Sanz</h1>
+                <div class="subtitle">Software Engineer / Backend Developer</div>
+            </header>
+
+            <!-- EXPERIENCIA -->
+            <section>
+                <h2 class="section-title">Experiencia Laboral</h2>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Backend Developer</span>
+                            <span class="job-company"> | Tech-House</span>
+                        </div>
+                        <span class="job-date">Agosto 2024 - Presente</span>
+                    </div>
+                    <div class="job-desc">
+                        <ul>
+                            <li><strong>Migración a Golang & AWS:</strong> Actualmente desarrollando microservicios utilizando Go y el ecosistema de Amazon Web Services.</li>
+                            <li><strong>Tech House Labs:</strong> Liderazgo técnico de proyectos de innovación interna.</li>
+                            <li><strong>Etapa inicial:</strong> Mantenimiento y desarrollo en stack Java/Spring Boot (similar a experiencias previas).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Software Engineer</span>
+                            <span class="job-company"> | Mercado Libre</span>
+                        </div>
+                        <span class="job-date">Abril 2024 - Agosto 2024</span>
+                    </div>
+                    <div class="job-desc">
+                        Desarrollo de software en equipos de alto rendimiento para el ecosistema de ecommerce líder en la región.
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Desarrollador Java</span>
+                            <span class="job-company"> | PinApp Development</span>
+                        </div>
+                        <span class="job-date">Enero 2022 - Abril 2024</span>
+                    </div>
+                    <div class="job-desc">
+                        Participación en el diseño y desarrollo del backend de la superapp "Agora" (billetera virtual, inversiones, retail).
+                        <ul>
+                            <li>Desarrollo de microservicios con Java Spring, JUnit, Mockito, Hibernate.</li>
+                            <li>Infraestructura: GCP, PubSub, Serverless, Redis, Flyway.</li>
+                            <li>Documentación con OpenAPI y Mermaid. Quality gates con SonarQube.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Freelance Fullstack Developer</span>
+                            <span class="job-company"> | Independiente</span>
+                        </div>
+                        <span class="job-date">Mayo 2021 - Dic 2021</span>
+                    </div>
+                    <div class="job-desc">
+                        Desarrollo web Fullstack JS. Diseño e implementación para clientes directos. Soporte a sistema Tussok.
+                    </div>
+                </div>
+            </section>
+
+             <!-- CONFERENCIAS (NUEVO) -->
+             <section>
+                <h2 class="section-title">Conferencias & Public Speaking</h2>
+                <div class="job-item">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Speaker @ F13 Code Summit</span>
+                            <span class="job-company"> | Perú</span>
+                        </div>
+                        <span class="job-date">2024</span>
+                    </div>
+                    <div class="job-desc">
+                        Ponente en evento internacional de tecnología, compartiendo conocimientos sobre desarrollo y arquitectura de software.
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCACIÓN -->
+            <section>
+                <h2 class="section-title">Formación Académica</h2>
+                
+                <div class="edu-item">
+                    <strong>Ingeniería en Sistemas</strong>
+                    <span>Universidad Tecnológica Nacional (UTN) | 2018 - Actualidad (En curso)</span>
+                </div>
+                
+                <div class="edu-item">
+                    <strong>Programación Web Full Stack</strong>
+                    <span>Digital House | 2021 - 2022</span>
+                </div>
+
+                <div class="edu-item">
+                    <strong>Bootcamp: Microservicios con Java 8</strong>
+                    <span>Intercorp Retail | 2021</span>
+                </div>
+
+                 <div class="edu-item">
+                    <strong>Certificación Java SE</strong>
+                    <span>Oracle - Fundación Proydesa | 2018</span>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
